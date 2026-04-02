@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Психолог | Добрая поддержка</title>
+    <!-- Google Fonts для мягкой типографики -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 (Free) для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- СТИКЕР НАВИГАЦИИ С ГАМБУРГЕРОМ -->
+    <div class="navbar">
+        <div class="nav-container">
+            <div class="logo">🌿 Анастасия Сигаева</div>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+    <!-- выезжающее меню -->
+    <ul class="nav-menu" id="navMenu">
+        <div class="close-menu" id="closeMenuBtn">&times;</div>
+        <li><a href="#welcome" data-nav-link>Приветствие</a></li>
+        <li><a href="#price" data-nav-link>Стоимость и формат</a></li>
+        <li><a href="#principles" data-nav-link>Принципы работы</a></li>
+        <li><a href="#diplomas" data-nav-link>Дипломы</a></li>
+        <li><a href="#contacts" data-nav-link>Контакты</a></li>
+    </ul>
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <main>
+        <!-- БЛОК 1: ПРИВЕТСТВИЕ -->
+        <section id="welcome">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero-content">
+                        <div class="hero-badge">бережно | безопасно | профессионально</div>
+                        <h1>Психолог, который <span class="title-outline">услышит</span> и поддержит</h1>
+                        <div class="hero-desc">
+                            Меня зовут Анастасия, я дипломированный психолог, гештальт-терапевт. 
+                            Помогаю найти внутреннюю опору, справиться с тревогой, выгоранием и сложными жизненными переходами. 
+                            Вместе мы создадим пространство, где вы сможете быть собой без осуждения.
+                        </div>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+                            <span style="background:#FBE9D2; padding:6px 18px; border-radius:40px;">🔹 годы практики</span>
+                            <span style="background:#FBE9D2; padding:6px 18px; border-radius:40px;">📖 более 50 клиентов</span>
+                        </div>
+                    </div>
+                    <div class="hero-photo">
+                        <!-- фото психолога (заглушка, но стилизовано под реальный образ) -->
+                        <img src="/img/_DSC8428_resized.jpg" alt="Психолог Анастасия" style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- БЛОК 2: СТОИМОСТЬ И ФОРМАТ РАБОТЫ -->
+        <section id="price">
+            <div class="container">
+                <h2 class="section-title"><span class="title-underline">Стоимость и формат работы</span></h2>
+                <div class="cards-grid">
+                    <div class="price-card">
+                        <div class="price-icon"><i class="fas fa-comments"></i></div>
+                        <h3>Индивидуальная терапия</h3>
+                        <p style="font-size: 1.8rem; font-weight: 700; margin: 0.5rem 0;">2 500 ₽</p>
+                        <p>50 минут · онлайн</p>
+                        <div class="price-detail">➤ Глубинная работа с запросом</div>
+                        <div class="price-detail">➤ Безопасная среда, конфиденциальность</div>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-icon"><i class="fas fa-calendar-week"></i></div>
+                        <h3>Абонемент (4 сессии)</h3>
+                        <p style="font-size: 1.8rem; font-weight: 700; margin: 0.5rem 0;">8 000 ₽</p>
+                        <p>Экономия 2 000 ₽ + поддержка в чате</p>
+                        <div class="price-detail">✔️ Гибкий график, регулярность</div>
+                        <div class="price-detail">✔️ Фокус на устойчивый результат</div>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                        <h3>Пробная встреча</h3>
+                        <p style="font-size: 1.8rem; font-weight: 700; margin: 0.5rem 0;">Бесплатно</p>
+                        <p>30 минут · знакомство и диагностика запроса</p>
+                        <div class="price-detail">✨ Узнаем, подходим ли друг другу</div>
+                        <div class="price-detail">✨ Ответы на вопросы о процессе</div>
+                    </div>
+                </div>
+                <p style="margin-top: 2rem; text-align: center; background: #FFF1E4; border-radius: 50px; padding: 0.7rem; max-width: 500px; margin-left: auto; margin-right: auto;">
+                    <i class="fas fa-clock"></i> Формат: <br>
+                    - онлайн по всему миру <br>
+                    - очно (Екатеринбург, по договорённости)
+                </p>
+            </div>
+        </section>
+
+        <!-- БЛОК 3: ПРИНЦИПЫ РАБОТЫ (с обводками / цветными акцентами) -->
+        <section id="principles">
+            <div class="container">
+                <h2 class="section-title"><span class="title-underline">Принципы моей работы</span></h2>
+                <div class="principles-list">
+                    <div class="principle-item">
+                        <div class="principle-num">01</div>
+                        <div class="principle-text">
+                            <h4>Безоценочное принятие</h4>
+                            <p>Вы можете говорить о чём угодно, не боясь осуждения. Я создаю пространство, где ваши чувства имеют ценность.</p>
+                        </div>
+                    </div>
+                    <div class="principle-item">
+                        <div class="principle-num">02</div>
+                        <div class="principle-text">
+                            <h4>Конфиденциальность и этика</h4>
+                            <p>Всё, что происходит в кабинете, остаётся между нами. Строгое соблюдение профессионального кодекса.</p>
+                        </div>
+                    </div>
+                    <div class="principle-item">
+                        <div class="principle-num">03</div>
+                        <div class="principle-text">
+                            <h4>Опора на научный подход</h4>
+                            <p>Работаю в методах гештальт-терапии, КПТ и системной семейной терапии. Доказанные практики.</p>
+                        </div>
+                    </div>
+                    <div class="principle-item">
+                        <div class="principle-num">04</div>
+                        <div class="principle-text">
+                            <h4>Бережность и ваш темп</h4>
+                            <p>Никакого насилия над личностью. Двигаемся с комфортной для вас скоростью, без давления.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- дополнительная обводка-акцент как на референсе -->
+                <div style="margin-top: 2rem; border-left: 6px solid #E8C468; background: #FEFAF2; padding: 1.2rem; border-radius: 28px;">
+                    <p style="font-weight: 500;">💬 «Психотерапия — это не только про исцеление, но и про рост, обретение внутренней свободы.»</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- БЛОК 4: ДИПЛОМЫ (скан об образовании, прикрепление файлов) -->
+        <section id="diplomas">
+            <div class="container">
+                <h2 class="section-title"><span class="title-underline">Дипломы и сертификаты</span></h2>
+                <p style="margin-bottom: 1.5rem;">Вы можете ознакомиться с моими документами об образовании и повышении квалификации. Нажмите на карточку для просмотра или скачайте PDF.</p>
+                <div class="diploma-gallery" id="diplomaGallery">
+                    <!-- Дипломы генерируются через JS, но для наглядности добавим статичные карточки с возможностью "скачать" -->
+                </div>
+                <div class="diploma-btn">
+                    <button class="btn-download" id="downloadAllBtn"><i class="fas fa-download"></i> Скачать все документы (пример)</button>
+                </div>
+                <p style="font-size: 0.85rem; margin-top: 1rem; text-align: center;">* В реальном профиле документы заверены и доступны по запросу</p>
+            </div>
+        </section>
+
+        <!-- БЛОК 5: КОНТАКТЫ (телеграм-канал) -->
+        <section id="contacts">
+            <div class="container">
+                <div class="contacts-block">
+                    <i class="fab fa-telegram" style="font-size: 3rem; color: #2AABEE;"></i>
+                    <h2 style="margin: 0.5rem 0;" class="title-outline">Свяжитесь со мной</h2>
+                    <p style="max-width: 500px; margin: 1rem auto;">Подписывайтесь на мой Telegram-канал, где я делюсь полезными техниками самоподдержки и анонсами. Также для записи на консультацию пишите в личные сообщения.</p>
+                    <a href="https://t.me/+lJn_Mivpb1M5ZDJi" target="_blank" class="telegram-link">
+                        <i class="fab fa-telegram-plane fa-lg"></i> Перейти в Telegram-канал
+                    </a>
+                    <p style="margin-top: 1.5rem;"><i class="fas fa-envelope"></i> <a href="mailto:mail@example.com">mail@example.com</a>  |  <i class="fab fa-whatsapp"></i> <a href="tel:+7 (999) 123-45-67">+7 (999) 123-45-67</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Анастасия Сигаева — дипломированный психолог. Бережное пространство для ваших изменений.</p>
+    </footer>
+
+    <!-- МОДАЛЬНОЕ ОКНО -->
+    <div id="diplomaModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalCloseBtn">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-graduation-cap" style="font-size: 2.5rem; color: #F5A65B;"></i>
+            </div>
+            <h3 class="modal-title" id="modalTitle">Название диплома</h3>
+            <p class="modal-description" id="modalDescription">Описание документа и его значение.</p>
+            <a href="#" id="modalPdfLink" target="_blank" class="modal-pdf-btn">
+                <i class="fas fa-file-pdf"></i> Открыть PDF
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // ========== ГАМБУРГЕР МЕНЮ ==========
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        const overlay = document.getElementById('menuOverlay');
+        const closeBtn = document.getElementById('closeMenuBtn');
+
+        function closeMenu() {
+            navMenu.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        function openMenu() {
+            navMenu.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        hamburger.addEventListener('click', openMenu);
+        closeBtn.addEventListener('click', closeMenu);
+        overlay.addEventListener('click', closeMenu);
+
+        // Закрытие меню при клике на ссылку и плавный скролл
+        const navLinks = document.querySelectorAll('[data-nav-link]');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    closeMenu();
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Дополнительно: если кто-то кликнет на обычную ссылку #, тоже обрабатываем плавно
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            if(anchor.getAttribute('href') !== '#') {
+                anchor.addEventListener('click', function(e) {
+                    const hash = this.getAttribute('href');
+                    if(hash === '#') return;
+                    const target = document.querySelector(hash);
+                    if(target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        closeMenu();
+                    }
+                });
+            }
+        });
+
+        // ---------- ДАННЫЕ ДИПЛОМОВ С ОПИСАНИЯМИ И ССЫЛКАМИ НА PDF (реальные демо-файлы) ----------
+        const diplomasData = [
+            { 
+                name: "Диплом о высшем образовании (УрФУ)", 
+                description: "Квалификация «Психолог. Преподаватель психологии». Диплом с отличием, подтверждает фундаментальную подготовку в области клинической и возрастной психологии.",
+                pdfUrl: "/files/Диплом УРФУ.pdf",
+                previewIcon: "🎓", 
+                color: "#EAD7C3" 
+            },
+            { 
+                name: "Диплом ДПО Перинатальная психология", 
+                description: "Профессиональная переподготовка в Московском институте гештальта. 400+ часов практики, работа с запросами, телесностью и контактом.",
+                pdfUrl: "/files/Диплом ДПО.pdf",
+                previewIcon: "📜", 
+                color: "#F5E1CE"
+            },
+            { 
+                name: "КПТ-практик (СКИП)", 
+                description: "Сертификат о повышении квалификации: Когнитивно-поведенческая терапия при тревожных и депрессивных расстройствах. Аккредитованная программа.",
+                pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+                previewIcon: "📘", 
+                color: "#EEDCC6" 
+            },
+            { 
+                name: "Кризисная психология", 
+                description: "Удостоверение о прохождении курса «Психологическая помощь в кризисных и посттравматических состояниях». Методы экстренной поддержки.",
+                pdfUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+                previewIcon: "🕊️", 
+                color: "#F7E9DC" 
+            }
+        ];
+
+        // Рендер галереи дипломов
+        const galleryContainer = document.getElementById('diplomaGallery');
+        function renderDiplomas() {
+            galleryContainer.innerHTML = '';
+            diplomasData.forEach((dip, idx) => {
+                const card = document.createElement('div');
+                card.className = 'diploma-card';
+                card.setAttribute('data-diploma-idx', idx);
+                card.innerHTML = `
+                    <div class="diploma-img" style="background: ${dip.color};">
+                        <span style="font-size: 3.5rem;">${dip.previewIcon}</span>
+                    </div>
+                    <p>${dip.name}</p>
+                    <small style="display:block; padding-bottom:12px;">🖱️ нажмите для деталей</small>
+                `;
+                card.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    openModalForDiploma(idx);
+                });
+                galleryContainer.appendChild(card);
+            });
+        }
+        renderDiplomas();
+
+        // ---------- МОДАЛЬНОЕ ОКНО ----------
+        const modal = document.getElementById('diplomaModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDescription = document.getElementById('modalDescription');
+        const modalPdfLink = document.getElementById('modalPdfLink');
+        const modalCloseBtn = document.getElementById('modalCloseBtn');
+
+        function openModalForDiploma(index) {
+            const diploma = diplomasData[index];
+            modalTitle.textContent = diploma.name;
+            modalDescription.textContent = diploma.description;
+            modalPdfLink.href = diploma.pdfUrl;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // блокируем скролл фона
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        modalCloseBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+        // закрытие по Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
+        });
+
+        // Кнопка "Скачать все" (демо)
+        const downloadAllBtn = document.getElementById('downloadAllBtn');
+        downloadAllBtn.addEventListener('click', () => {
+            alert("📁 В демо-версии представлены образцы дипломов. Каждый документ можно открыть через модальное окно, нажав на карточку.");
+        });
+
+        // Убедимся, что скролл работает даже при динамике
+        window.addEventListener('load', () => {
+            if (window.location.hash) {
+                const el = document.querySelector(window.location.hash);
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>
+</body>
+</html>
